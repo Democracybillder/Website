@@ -19,7 +19,6 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -29,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+          <a class="navbar-brand" href="#">Welcome to Billder</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -44,47 +43,74 @@
         </div>
       </div>
     </nav>
-
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
-            <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li class="active"><a href="#">Home<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">My Billder</a></li>
+            <li><a href="#">Contribute</a></li>
+            <li><a href="#">FAQ</a></li>
           </ul>
           <ul class="nav nav-sidebar">
-            <li><a href="">Nav item</a></li>
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
-            <li><a href="">More navigation</a></li>
-          </ul>
-          <ul class="nav nav-sidebar">
-            <li><a href="">Nav item again</a></li>
-            <li><a href="">One more nav</a></li>
-            <li><a href="">Another nav item</a></li>
+            <li><a href="">About Billder</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+            <li><a href="">Preferences</a></li>
+            <li><a href="">Fun Stuff</a></li>
+            <li><a href="">RamBill</a></li>
           </ul>
         </div>
-    <footer class="footer">
-        <p>&copy; Billder 2015</p>
-      </footer>  
-    
+      </div>
+    </div>
+    <div id="billtracker" class="container-fluid">
+      <div class="row">
+          <div class="col-md-1"><img src="http://www.sesamestreet.org/cms_services/services?action=download&uid=dbf13ec8-16cd-11dd-a1a2-3f408a4274b3" alt="elmo" class="img-circle"><p><a href="#">Senator Elmo</a></p></div>
+          <div class="col-md-10"><h1 class="state">Rhode Island to ban Mom Jeans</h1></div>
+          <div class="col-md-1"><button type="button" class="btn vote-up btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button type="button" class="btn vote-down btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button><button type="button" class="btn add-to-mybills btn-lg"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p class="text-muted">600 votes</p></div>
+      </div>
+      <div class="row">
+          <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="bigbird" class="img-circle"><p><a href="#">Senator Bigbird</a></p></div>
+          <div class="col-md-10"><h1 class="federal">ObamaCare 2.0 - Death Camps for +65 year olds</h1></div>
+          <div class="col-md-1"><button type="button" class="btn vote-up btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button type="button" class="btn vote-down btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button><button type="button" class="btn add-to-mybills btn-lg"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p class="text-muted">2,000 votes</p></div>
+      </div>  
+    </div>
+
+ <div id="govcategories" class="container">
+    <select multiple class="form-control">
+        <option class="checkbox">Federal</option>
+        <option class="checkbox">State</option>
+        <option class="checkbox">Local</option>
+    </select>
+    <div id="billcategories" class="container">
+         <div class="checkbox-inline">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            Education
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2">
+            Health
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">
+            Immigration
+          </label>
+        </div>
+        <div class="checkbox-inline">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox4" value="option4">
+            Transportation
+          </label>
+        </div>
+    </div>
+ </div>
 
       
-      <!--<div class="container">
-            <div class="row">
-                <div class="col-md-1"><img src="http://www.sesamestreet.org/cms_services/services?action=download&uid=dbf13ec8-16cd-11dd-a1a2-3f408a4274b3" alt="elmo" class="img-circle"><p><a href="#">Senator Elmo</a></p></div>
-                <div class="col-md-10"><h1 class="state">Rhode Island to ban Mom Jeans</h1></div>
-                <div class="col-md-1"><button type="button" class="btn vote-up btn-sm">Vote Up</button><button type="button" class="btn vote-down btn-sm">Vote Down</button><button type="button" class="btn add-to-mybills btn-sm">Add to My Bills</button><p class="text-muted">600 votes</p></div>
-            </div>
-            <div class="row">
-                <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="bigbird" class="img-circle"><p><a href="#">Senator Bigbird</a></p></div>
-                <div class="col-md-10"><h1 class="federal">ObamaCare 2.0 - Death Camps for +65 year olds</h1></div>
-                <div class="col-md-1"><button type="button" class="btn vote-up btn-sm">Vote Up</button><button type="button" class="btn vote-down btn-sm">Vote Down</button><button type="button" class="btn add-to-mybills btn-sm">Add to My Bills</button><p class="text-muted">2,000 votes</p></div>
-            </div>
-            </div>
+    <footer class="footer">
+    <p>&copy; Billder 2015</p>
+</footer>  
+
+      
       
         
         

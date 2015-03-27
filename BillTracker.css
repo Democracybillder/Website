@@ -103,3 +103,54 @@ body {
   display: inline-block;
   border-radius: 50%;
 }
+
+img {
+    height: 100px;
+    width: 100px;
+}
+h1 {
+    margin-left: 15px;
+}
+.row {
+    margin: 10px;
+}
+#billtracker {
+    height: 75%;
+    width: 75%;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid grey;
+}
+
+.btn-lg{
+    background-color: white;
+}
+
+.vote-up {
+    color: #428bca;
+}
+.vote-down {
+    color: #428bca;
+}
+.add-to-mybills {
+    color: #428bca;
+}
+
+#govcategories {
+    width: 400px;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+#billcategories {
+    margin-right: 20px;
+}
+
+
+/* Custom page footer */
+
+.footer {
+  padding-bottom: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
