@@ -79,8 +79,8 @@ h1 {
 #billtracker {
     height: 75%;
     width: 75%;
-    margin: center;
-    padding-top: 5%;
+    margin-top: 10%;
+    padding-top: 5px;
 }
 
 .btn-lg{
