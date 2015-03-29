@@ -32,7 +32,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
+            <li><a href= "#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
@@ -43,7 +43,7 @@
         </div>
       </div>
     </nav>
-    <nav id="navbar2" class="navbar navbar-inverse navbar-fixed-top">
+    <nav id="navbar2" class="hidden">
       <div class="container-fluid">
         <div id="navbar" class="navbar-collapse collapse">
           <div class="nav navbar-nav">
@@ -127,9 +127,7 @@
  </div>-->
     <footer class="footer">
     <p>&copy; Billder 2015</p>
-</footer>  
-
-        
+</footer>       
         
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -138,3 +136,19 @@
       
   </body>
 </html>
+
+<!-- JavaScript functionalities:
+
+- Use Cookies for previous logins? Check through navigator.cookieEnabled; create with document.cookie
+- Hover or click for menus?
+- Use a addEventListener() to attach even handlers (reactions) to elements (buttons etc).
+    element.addEventListener(event, function, useCapture);
+    '...("click", myfunction, boolean that represents bublling vs. capturing) - bubbling = inner element first (e.g.<p> before <div>), capturing = outer element first (e.g.<div> before <p>). bubbling = default or "false"; capturing = "true"
+screen.availWidth and screen.availHeight for maximizing user experience
+- For a link: window.location.assign("someURL")
+    window.addEventListener() to monitor overall user behavior
+- Timing events: setInterval() or setTimeOut()
+- for external js files: <script src="myScript.js"></script> (placed where I want them executed)
+- free Google CDN for many JS libraries including jQuery: 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+-->
