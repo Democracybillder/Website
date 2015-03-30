@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="bootstrap-themefull.css">
     <link rel="stylesheet" href="BillTracker.css">
+      
+    <script> $(document).ready(function (){
+        $("#dashboard").click(function(){
+            $("#navbar2").slideToggle("slow");
+        });
+    });
+    </script>
     
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,7 +42,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href= "#">Dashboard</a></li>
+            <li id = "dashboard"><a href= "#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
@@ -43,7 +53,7 @@
         </div>
       </div>
     </nav>
-    <nav id="navbar2" class="hidden">
+    <nav id="navbar2" style = "display:none">
       <div class="container-fluid">
         <div id="navbar" class="navbar-collapse collapse">
           <div class="nav navbar-nav">
@@ -128,11 +138,6 @@
     <footer class="footer">
     <p>&copy; Billder 2015</p>
 </footer>       
-        
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
       
   </body>
 </html>
