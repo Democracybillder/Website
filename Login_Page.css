@@ -3,4 +3,16 @@
 height: 50%;
 width:50%;
 border: 1px solid black;
+background-color: #1B5E20;
+padding: 10px;
+}
+
+.input-group{
+    width: 50%;
+}
+
+.btn {
+    background-color: #0D47A1;
+    color: ghostwhite;
+    margin-top: 5px;
 }

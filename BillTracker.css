@@ -26,9 +26,8 @@ body {
     background-color: #1B5E20;
     font-size: 20px;
 }
-
-checkbox{
-    colo: #1B5E20;
+.checkbox-inline {
+    color: ghostwhite;
 }
 /*
  * Main content
