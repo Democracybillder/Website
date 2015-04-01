@@ -23,11 +23,13 @@ body {
 
 #navbar2 {
     margin-top: 50px;
-    background-color: blue;
+    background-color: #1B5E20;
     font-size: 20px;
 }
 
-
+checkbox{
+    colo: #1B5E20;
+}
 /*
  * Main content
  */
@@ -65,12 +67,20 @@ body {
   border-radius: 50%;
 }
 
+a {
+    color: ghostwhite;
+}
+p {
+    color: ghostwhite;
+}
+
 img {
     height: 100px;
     width: 100px;
 }
 h1 {
     margin-left: 15px;
+    color: ghostwhite;
 }
 .row {
     margin: 10px;
@@ -81,6 +91,7 @@ h1 {
     width: 75%;
     margin-top: 10%;
     padding-top: 5px;
+    background-color: #1B5E20;
 }
 
 .btn-lg{
@@ -88,13 +99,13 @@ h1 {
 }
 
 .vote-up {
-    color: #428bca;
+    color: #0D47A1;
 }
 .vote-down {
-    color: #428bca;
+    color: #0D47A1;
 }
 .add-to-mybills {
-    color: #428bca;
+    color: #0D47A1;
 }
 
 #govcategories {
