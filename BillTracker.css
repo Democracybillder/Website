@@ -78,7 +78,7 @@ img {
     width: 100px;
 }
 h1 {
-    margin-left: 15px;
+    margin: 15px;
     color: ghostwhite;
 }
 .row {
@@ -90,23 +90,14 @@ h1 {
     width: 75%;
     margin-top: 10%;
     padding-top: 5px;
-    background-color: #1B5E20;
+    background-color: #4CAF50;
 }
 
-.btn-lg{
-    background-color: white;
-}
-
-.vote-up {
+button {
+    background-color: ghostwhite;
     color: #0D47A1;
 }
-.vote-down {
-    color: #0D47A1;
-}
-.add-to-mybills {
-    color: #0D47A1;
-}
-
+    
 #govcategories {
     width: 400px;
     margin-right: 20px;
