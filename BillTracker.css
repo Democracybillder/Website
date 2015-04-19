@@ -22,8 +22,8 @@ body {
 }
 
 #navbar2 {
-    margin-top: 50px;
-    background-color: #1B5E20;
+    background-color: #0D47A1;
+;
     font-size: 20px;
 }
 .checkbox-inline {
@@ -90,12 +90,12 @@ h1 {
     width: 75%;
     margin-top: 10%;
     padding-top: 5px;
-    background-color: #4CAF50;
+    background-color: #0D47A1;
 }
 
 button {
-    background-color: ghostwhite;
-    color: #0D47A1;
+    background-color: #0D47A1;
+    color: #76FF03;
 }
     
 #govcategories {
