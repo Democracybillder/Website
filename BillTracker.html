@@ -10,12 +10,15 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="bootstrap-themefull.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="BillTracker.css">
       
     <script> $(document).ready(function (){
         $("#dashboard").click(function(){
             $("#navbar2").slideToggle("slow");
+        });
+        $(".maintranslation").click(function(){
+            $(".lastAction").slideToggle("fast");
         });
     });
     </script>
@@ -93,17 +96,54 @@
         </div>
       </div>
     </nav>
+    <div><h1 class="PageHeading">The BillTracker</h1></div>
     <div id="billtracker" class="container-fluid well">
       <div class="row">
-          <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="elmo" class="img-circle"><p><a href="#">Senator Elmo</a></p></div>
-          <div class="col-md-10"><h1 class="state">Rhode Island to ban Mom Jeans</h1></div>
+          <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="elmo" class="img-circle"><p><a class="PoliticanNames" href="#">Senator Elmo</a></p></div>
+          <div class="col-md-10"><h1 class="state maintranslation">Rhode Island to ban Mom Jeans</h1>
+          <div class="panel panel-default lastAction BillHistory">
+              <div class="panel-heading"><b>Submitted Translations</b></div>
+              <!--Table-->
+              <table class="table table-condensed">
+              <th>User</th>
+              <th>Date</th>
+              <th>Translation</th>
+              <th># of Votes</th>
+                  <tr>
+                      <td>shdoron1</td>
+                      <td>25 April 2014</td>
+                      <td>RI pioneers good fashion practices</td>
+                      <td>550</td>
+                  </tr>
+                  <tr>
+                      <td>AlchemistsDaughter</td>
+                      <td>22 April 2014</td>
+                      <td>RI takes away our political freedom</td>
+                      <td>300</td>
+                  </tr>
+                  <tr>
+                      <td>DanielGrossman</td>
+                      <td>01 April 2014</td>
+                      <td>RI bans the worst clothes since croptops</td>
+                      <td>220</td>
+                  </tr>
+                  <tr>
+                      <td>Tickcot</td>
+                      <td>22 February 2014</td>
+                      <td>RI legislators have nothing better to do</td>
+                      <td>150</td>
+                  </tr>
+                  <tr>
+                      <td>xitsej</td>
+                      <td>22 February 2014</td>
+                      <td>Where is Rhode Island?</td>
+                      <td>5</td>
+                  </tr>
+              </table>
+              </div>
+          </div>
           <div class="col-md-1"><button type="button" class="btn vote-up btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button type="button" class="btn vote-down btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button><button type="button" class="btn add-to-mybills btn-lg"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p>600 votes</p></div>
       </div>
-      <div class="row">
-          <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="bigbird" class="img-circle"><p><a href="#">Senator Bigbird</a></p></div>
-          <div class="col-md-10"><h1 class="federal">ObamaCare 2.0 - Death Camps for +65 year olds</h1></div>
-          <div class="col-md-1"><button type="button" class="btn vote-up btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button type="button" class="btn vote-down btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button><button type="button" class="btn add-to-mybills btn-lg"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p>2,000 votes</p></div>
-      </div>  
     </div>
 
       

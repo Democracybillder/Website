@@ -66,9 +66,25 @@ body {
   border-radius: 50%;
 }
 
-a {
-    color: ghostwhite;
+.PageHeading {
+    text-align: center;
+    font-size: 75px;
 }
+
+#billtracker {
+    height: 75%;
+    width: 75%;
+    margin-top: 10px;
+    padding-top: 5px;
+    background-color: #0D47A1;
+}
+
+.PoliticanNames {
+    color: ghostwhite;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
 p {
     color: ghostwhite;
 }
@@ -76,21 +92,24 @@ p {
 img {
     height: 100px;
     width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
-h1 {
-    margin: 15px;
+.maintranslation {
     color: ghostwhite;
+    font-size: 4.5em;
+    text-align: center;
+    margin-left: 5px;
 }
+
 .row {
-    margin: 10px;
     border-bottom: 1px solid black;
 }
-#billtracker {
-    height: 75%;
-    width: 75%;
-    margin-top: 10%;
-    padding-top: 5px;
-    background-color: #0D47A1;
+
+
+.panel {
+    background-color: ghostwhite;
+    margin: 15px;
 }
 
 button {
