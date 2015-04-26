@@ -12,10 +12,12 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="BillTracker.css">
+    <!--sidebar-->
+      
       
     <script> $(document).ready(function (){
-        $("#dashboard").click(function(){
-            $("#navbar2").slideToggle("slow");
+        $("#filters").click(function(){
+            $("#navbar2").animate({width: 'toggle'});
         });
         $(".maintranslation").click(function(){
             $(".lastAction").slideToggle("fast");
@@ -45,7 +47,7 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li id = "dashboard"><a href= "#">Dashboard</a></li>
+            <li><a href= "#">Dashboard</a></li>
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
@@ -56,46 +58,40 @@
         </div>
       </div>
     </nav>
-    <nav id="navbar2" style = "display:none">
-      <div class="container-fluid">
-        <div id="navbar" class="navbar-collapse collapse">
-          <div class="nav navbar-nav">
-            <div class="checkbox-inline">
-          <label class="checkbox-inline">
+    <div class="container-fluid">
+    <div class="row">
+        <button id = "filters" class="btn btn-default" type="button">Filters</button>
+        <div id="navbar2" class="col-sm-2 col-md-1 sidebar">
+          <ul class="nav nav-sidebar">
+            <li class="active"><p>Select your filters</p></li>
+            <li><div class="checkbox">
+          <label class="checkbox">
             <input type="checkbox" id="inlineCheckbox1" value="option1">
             Education
           </label>
-          <label class="checkbox-inline">
+          <label class="checkbox">
             <input type="checkbox" id="inlineCheckbox2" value="option2">
             Health
           </label>
-          <label class="checkbox-inline">
+          <label class="checkbox">
             <input type="checkbox" id="inlineCheckbox3" value="option3">
             Immigration
           </label>
-            </div>
-          </div>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <div class="nav navbar-nav">
-            <div class="checkbox-inline">
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1">
-            Transportation
+          <label class="checkbox">
+            <input type="checkbox" id="inlineCheckbox4" value="option1">
+            Money
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2">
+          <label class="checkbox">
+            <input type="checkbox" id="inlineCheckbox5" value="option2">
             Other Option
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3">
+          <label class="checkbox">
+            <input type="checkbox" id="inlineCheckbox6" value="option3">
             Another Option
           </label>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
+            </div></li>
+          </ul>
+    </div>
     <div><h1 class="PageHeading">The BillTracker</h1></div>
     <div id="billtracker" class="container-fluid well">
       <div class="row">
@@ -145,7 +141,8 @@
           <div class="col-md-1"><button type="button" class="btn vote-up btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button type="button" class="btn vote-down btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button><button type="button" class="btn add-to-mybills btn-lg"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p>600 votes</p></div>
       </div>
     </div>
-
+</div> 
+</div>
       
 <footer class="footer">
     <p>&copy; Billder 2015</p>
@@ -168,4 +165,45 @@ screen.availWidth and screen.availHeight for maximizing user experience
 - for external js files: <script src="myScript.js"></script> (placed where I want them executed)
 - free Google CDN for many JS libraries including jQuery: 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<div id="navbar2" style = "display:none" class= "col-sm-3 col-md-2 sidebar">
+      <div class="container-fluid">
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="nav navbar-nav">
+            <div class="checkbox-inline">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            Education
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2">
+            Health
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">
+            Immigration
+          </label>
+            </div>
+          </div>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="nav navbar-nav">
+            <div class="checkbox-inline">
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox1" value="option1">
+            Transportation
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox2" value="option2">
+            Other Option
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="inlineCheckbox3" value="option3">
+            Another Option
+          </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 -->

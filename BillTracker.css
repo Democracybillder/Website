@@ -71,17 +71,19 @@ body {
     font-size: 75px;
 }
 
+
 #billtracker {
     height: 75%;
     width: 75%;
     margin-top: 10px;
     padding-top: 5px;
     background-color: #0D47A1;
+    position: relative;
 }
 
 .PoliticanNames {
     color: ghostwhite;
-    font-size: 1em;
+    font-size: 10px;
     white-space: nowrap;
 }
 
@@ -116,16 +118,42 @@ button {
     background-color: #0D47A1;
     color: #76FF03;
 }
-    
-#govcategories {
-    width: 400px;
-    margin-right: 20px;
-    padding: 5px;
-}
 
 #billcategories {
     margin-right: 20px;
 }
+
+#filters{
+    color: black;
+    float: left;
+    position: fixed;
+    background-color: white;
+}
+
+.nav-sidebar {
+    margin-right: -20px;
+    margin-bottom: 20px;
+    margin-left: -20px;    
+    margin-top: 40px;
+    position: absolute;
+    background-color: #0D47A1;
+    color: ghostwhite;
+    border: solid 2px black;
+}
+.nav-sidebar p{
+    font-size: 18px;
+    color: ghostwhite;
+    white-space: normal;
+    margin-left: 10px;
+}
+.checkbox {
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 10px;
+}
+
+
 
 
 /* Custom page footer */
