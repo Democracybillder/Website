@@ -5,23 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="BillTracker.css">
-      
-    <script> $(document).ready(function (){
-        $("#dashboard").click(function(){
-            $("#navbar2").slideToggle("slow");
-        });
-        $(".maintranslation").click(function(){
-            $(".lastAction").slideToggle("fast");
-        });
-    });
-    </script>
+    
     
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -97,9 +85,9 @@
       </div>
     </nav>
     <div><h1 class="PageHeading">The BillTracker</h1></div>
-    <div id="billtracker" class="container-fluid well">
+    <div id="billtracker" class="container well jscroll">
       <div class="row">
-          <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="elmo" class="img-circle"><p><a class="PoliticanNames" href="#">Senator Elmo</a></p></div>
+          <div class="col-md-1"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="elmo" class="img-circle"><p><a class="PoliticanNames" href="#">Senator BigBird</a></p></div>
           <div class="col-md-10"><h1 class="state maintranslation">Rhode Island to ban Mom Jeans</h1>
           <div class="panel panel-default lastAction BillHistory">
               <div class="panel-heading"><b>Submitted Translations</b></div>
@@ -143,6 +131,7 @@
               </div>
           </div>
           <div class="col-md-1"><button type="button" class="btn vote-up btn-lg"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span></button><button type="button" class="btn vote-down btn-lg"><span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></button><button type="button" class="btn add-to-mybills btn-lg"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p>600 votes</p></div>
+          <a href="AdditionalBills.html">next page</a>
       </div>
     </div>
 
@@ -150,6 +139,27 @@
 <footer class="footer">
     <p>&copy; Billder 2015</p>
 </footer>       
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="jscroll-master/jquery.jscroll.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+      
+<script> $(document).ready(function (){
+        $('.jscroll').jscroll({
+            autoTrigger: false
+        });
+        $("#dashboard").click(function(){
+            $("#navbar2").slideToggle("slow");
+        });
+        $(".maintranslation").click(function(){
+            $(".lastAction").slideToggle("fast");
+        });
+    });
+</script>      
+      
       
   </body>
 </html>
