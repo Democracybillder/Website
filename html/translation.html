@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+</head>
+<form action="translation_submission_page.php", method="POST", autocomplete="off">
+	<fieldset>
+		<legend>Translation Information:</legend>
+		Translation:<br>
+		<textarea name="translation" rows="5" cols="30" maxlength="140" spellcheck="true" placeholder="Translation limited to 140 characters..." autofocus></textarea>
+		<br>
+		<input type="radio" name="public" value="public" checked>Public
+		<br>
+		<input type="radio" name="private" value="private">Private
+		<br><br>
+		<input type="submit" value="Submit">
+	</fieldset>
+</form>
+
+<!-- Translations should be structured as articles 
+
+<article>
+	<h1>   </h1>
+	<p>    </p>
+</article> -->
