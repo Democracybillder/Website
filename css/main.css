@@ -1,41 +1,35 @@
-/*
- * Base structure
- */
-
-/* Move down content because we have a fixed navbar that is 50px tall */
-body {
-  padding-top: 50px;
-}
+/* Main CSS File */
 
 
 /*
- * Global add-ons
+ * Navbar
  */
 
-
-/*
- * Top navigation
- * Hide default border to remove 1px line.
- */
 .navbar-fixed-top {
   border: 0;
 }
 
-#navbar2 {
-    background-color: #0D47A1;
-;
-    font-size: 20px;
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 60px;
 }
-.checkbox-inline {
-    color: ghostwhite;
+
+
+
+
+
+
+/* So bill translations only appear when clicked on */
+.lastAction {
+  display:none;
 }
+
+
 /*
  * Main content
  */
 
-.main {
-  padding: 20px;
-}
+
 @media (min-width: 768px) {
   .main {
     padding-right: 40px;
@@ -51,28 +45,8 @@ body {
  * Placeholder dashboard ideas
  */
 
-.placeholders {
-  margin-bottom: 30px;
-  text-align: center;
-}
-.placeholders h4 {
-  margin-bottom: 0;
-}
-.placeholder {
-  margin-bottom: 20px;
-}
-.placeholder img {
-  display: inline-block;
-  border-radius: 50%;
-}
-
-.PageHeading {
-    text-align: center;
-    font-size: 75px;
-}
 
 #billtracker {
-    height: 75%;
     width: 75%;
     margin-top: 10px;
     padding-top: 5px;
@@ -85,8 +59,8 @@ body {
     white-space: nowrap;
 }
 
-p {
-    color: ghostwhite;
+.legImage {
+  padding-top: 8px;
 }
 
 img {
@@ -97,7 +71,6 @@ img {
 }
 .maintranslation {
     color: ghostwhite;
-    font-size: 4.5em;
     text-align: center;
     margin-left: 5px;
 }
@@ -110,6 +83,8 @@ img {
 .panel {
     background-color: ghostwhite;
     margin: 15px;
+    height: 100px;
+    overflow: scroll;
 }
 
 button {
@@ -130,7 +105,52 @@ button {
 
 /* Custom page footer */
 
-.footer {
+footer {
   padding-bottom: 5px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+}
+/* FAQ Page */
+
+p {
+    color: ghostwhite;
+}
+.jumbotron {
+    margin:auto;
+    height: 50%;
+    width:75%;
+    background-color: #4CAF50;
+    color: #C55656;
+    padding-left: 10px;
+}
+a p {
+    text-decoration: underline;
+    color: #0D47A1;
+}
+.jumbotron p {
+    text-align: justify;
+}
+
+/* Login_Page - Outside */
+#Login {
+    height: 50%;
+    width:50%;
+    border: 1px solid black;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+
+.input-group{
+    width: 50%;
+}
+
+.btn {
+    background-color: #0D47A1;
+    color: ghostwhite;
+    margin-top: 5px;
+}
+
+.table {
+  background-color: ghostwhit;
+}
+
