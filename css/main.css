@@ -12,6 +12,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
   padding-top: 60px;
+  margin: 0;
 }
 
 
@@ -22,6 +23,7 @@ body {
 /* So bill translations only appear when clicked on */
 .lastAction {
   display:none;
+  background-color: ghostwhite;
 }
 
 
@@ -147,10 +149,25 @@ a p {
 .btn {
     background-color: #0D47A1;
     color: ghostwhite;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .table {
   background-color: ghostwhit;
+}
+
+.pane  {
+  max-height: 150px;
+  overflow-y: scroll;
+  margin-bottom: 15px;
+  border-radius: 12px;
+}
+
+th  {
+    background-color: #bec6d2;
+}
+
+.votes  {
+  padding-left: 16px; 
 }
 

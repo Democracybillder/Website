@@ -63,11 +63,12 @@
 
   <div class="row">
     <div class="container-fluid well" id="billtracker">
-    <div class="row"> <!-- nested row -->
-      <div class="col-md-2 legImage"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="elmo" class="img-circle" "img-responsive"><p><a class="PoliticanNames" href="#">Senator Elmo</a></p>
+    <div class="row" class="bill"> <!-- nested row -->
+      <div class="col-md-2 legImage"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="big-bird" class="img-circle" "img-responsive"><p class="center-block"><a class="PoliticanNames" href="#">Senator Big Bird</a></p>
       </div>
       <div class="col-md-8"><h1 class="state maintranslation">Rhode Island to ban Mom Jeans</h1>
       <!--Table-->
+      <div class="pane">
       <table class="table table-condensed lastAction">
       <th>User</th>
       <th>Date</th>
@@ -134,6 +135,7 @@
      <td>5</td>
          </tr>
     </table>
+    </div>
     </div>
     <div class="col-md-2">
       <button type="button" class="btn vote-up btn-lg">
@@ -141,15 +143,16 @@
       <button type="button" class="btn vote-down btn-lg">
       <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"><span class="badge">5</span></span></button>
       <button type="button" class="btn add-to-mybills btn-lg">
-      <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p>600 votes</p></div>
+      <span class="label label-default">Follow</span></button><p class="votes">600 votes</p></div>
     </div>
 
     <div class="row bill"> <!-- nested row -->
-      <div class="col-md-2 legImage"><img src="http://media.salon.com/2012/10/big_bird_shocked_square-460x307.jpg" alt="elmo" class="img-circle" "img-responsive"><p><a class="PoliticanNames" href="#">Senator Elmo</a></p>
+      <div class="col-md-2 legImage"><img src="http://www.sesamestreet.org/cms_services/services?action=download&uid=dbf13ec8-16cd-11dd-a1a2-3f408a4274b3" alt="elmo" class="img-circle" "img-responsive"><p><a class="PoliticanNames" href="#">Senator Elmo</a></p>
       </div>
       <div class="col-md-8"><h1 class="state maintranslation">America 
       Feeding Puppies</h1>
              <!--Table-->
+      <div class="pane">
       <table class="table table-condensed lastAction">
       <th>User</th>
       <th>Date</th>
@@ -217,29 +220,26 @@
          </tr>
     </table>
     </div>
+    </div>
     <div class="col-md-2">
-          <button type="button" class="btn vote-up btn-lg">
+          <button type="button" class="btn vote-up btn-lg test">
       <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"><span class="badge">5</span></span></button>
       <button type="button" class="btn vote-down btn-lg">
       <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"><span class="badge">5</span></span></button>
       <button type="button" class="btn add-to-mybills btn-lg">
-      <span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span></button><p>600 votes</p></div>
+      <span class="label label-default">Follow</span></button><p class="votes">600 votes</p></div>
     </div>
     </div>
   </div>
 </div>
-
-
-
-<script> $(".maintranslation").click(function(){
-            $(".lastAction").slideToggle();
-        });
-</script>
       
 <footer>
     &copy; Billder 2015
 </footer>       
-      
+
+<!-- JavaScripts -->
+<script type="text/javascript" src="js/main.js"></script>
+
 </body>
 </html>
 
@@ -258,3 +258,4 @@ screen.availWidth and screen.availHeight for maximizing user experience
 - free Google CDN for many JS libraries including jQuery: 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 -->
+
