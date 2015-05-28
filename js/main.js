@@ -1,5 +1,5 @@
 $(".maintranslation").click(function(){
-            $(this).next().children(".lastAction").slideToggle();	
+            $(this).next().slideToggle();	
     });
 
 $(".form-control").change(function() {

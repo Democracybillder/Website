@@ -21,9 +21,8 @@ body {
 
 
 /* So bill translations only appear when clicked on */
-.lastAction {
+.translations {
   display:none;
-  background-color: ghostwhite;
 }
 
 
@@ -153,7 +152,7 @@ a p {
 }
 
 .pane  {
-  max-height: 200px;
+  max-height: 400px;
   overflow-y: scroll;
   margin-bottom: 15px;
   border-radius: 12px;
