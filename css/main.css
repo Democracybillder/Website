@@ -75,12 +75,8 @@ img {
     color: ghostwhite;
     text-align: center;
     margin-left: 5px;
+    cursor: pointer;
 }
-
-.row {
-    border-bottom: 1px solid black;
-}
-
 
 .panel {
     background-color: ghostwhite;
@@ -157,7 +153,7 @@ a p {
 }
 
 .pane  {
-  max-height: 150px;
+  max-height: 200px;
   overflow-y: scroll;
   margin-bottom: 15px;
   border-radius: 12px;
@@ -169,5 +165,83 @@ th  {
 
 .votes  {
   padding-left: 16px; 
+}
+
+.checkbox  {
+    padding-left: 10px;
+}
+
+.triangle-border {
+  position: relative;
+  padding: 15px;
+  margin: 1em 0 3em;
+  border: 5px solid #e3e3e3;
+  color: #333;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  max-width: 500px
+}
+
+.triangle-border:before {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 40px;
+  border-width: 20px 20px 0;
+  border-style: solid;
+  border-color: #e3e3e3 transparent;
+  display: block;
+  width: 0;
+}
+
+.triangle-border:after {
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  left: 47px;
+  border-width: 13px 13px 0;
+  border-style: solid;
+  border-color: #0D47A1 transparent;
+  display: block;
+  width: 0;
+}
+
+.triangle-border.left:before {
+  top: 10px;
+  bottom: auto;
+  left: -30px;
+  border-width: 15px 30px 15px 0;
+  border-color: transparent #e3e3e3;
+  }
+
+.triangle-border.left:after {
+  top: 16px;
+  bottom: auto;
+  left: -21px;
+  border-width: 9px 21px 9px 0;
+  border-color: transparent #0D47A1;
+}
+
+.triangle-border.right:before {
+  top: 10px;
+  bottom: auto;
+  left: auto;
+  right: -30px;
+  border-width: 15px 0 15px 30px;
+  border-color: transparent #e3e3e3;
+  }
+
+  .triangle-border.right:after {
+  top: 16px;
+  bottom: auto;
+  left: auto;
+  right: -21px;
+  border-width: 9px 0 9px 21px;
+  border-color: transparent #0D47A1;
+}
+
+.col-md-3.pull-right  {
+  padding-right: 30px;
 }
 
