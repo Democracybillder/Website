@@ -33,6 +33,19 @@ $(".form-control").change(function() {
 			alert("Input value: " + $(".form-control").val());
 });
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< Updated upstream
+function addNewBill()  {
+	var billInfo = ""  //get bill info
+	var legislator = 'Senator Cookie' //parse
+	var billText = "cookies mandatory at every restaurant"
+	var billLog = []
+	var bill = "" // html bill skeleton
+	$("footer").before("put it all together here")
+}
+=======
+>>>>>>> Stashed changes
 /*
 function addNewBill(bill)  {
 	var billInfo = "";  //get bill info
@@ -82,11 +95,18 @@ img.addClass("img-circle");
 img.appendTo("#translatorImage");
 
 var translatorName = $("<p />");
+<<<<<<< Updated upstream
 p.addClass("center-block");
 p.
+=======
+>>>>>>> Stashed changes
 
 
 
 
 
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
