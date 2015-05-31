@@ -86,7 +86,7 @@ $(."translations").append('<div class="row">');
 var translatorImage = $("<div />", {
 	"class":"col-md-3 translatorImage"
 })
-
+/*
 var translatorHeadshot = $("<img />");
 img.attr({
 	'src': "https://pbs.twimg.com/profile_images/456240049776902144/9FNdHosY_400x400.jpeg",
@@ -95,18 +95,7 @@ img.addClass("img-circle");
 img.appendTo("#translatorImage");
 
 var translatorName = $("<p />");
-<<<<<<< Updated upstream
 p.addClass("center-block");
 p.
-=======
->>>>>>> Stashed changes
-
-
-
-
-
-
-<<<<<<< Updated upstream
-=======
->>>>>>> Stashed changes
->>>>>>> Stashed changes
+\
+*/
