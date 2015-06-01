@@ -25,17 +25,12 @@ var bill = {
         	
         };
 
-$(".maintranslation").click(function(){
-            $(this).next().slideToggle();	
-    });
-
 $(".form-control").change(function() {
 			alert("Input value: " + $(".form-control").val());
 });
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< Updated upstream
+/*
+
 function addNewBill()  {
 	var billInfo = ""  //get bill info
 	var legislator = 'Senator Cookie' //parse
@@ -44,9 +39,8 @@ function addNewBill()  {
 	var bill = "" // html bill skeleton
 	$("footer").before("put it all together here")
 }
-=======
->>>>>>> Stashed changes
-/*
+
+
 function addNewBill(bill)  {
 	var billInfo = "";  //get bill info
 	var legislator = 'Senator Cookie'; //parse
@@ -55,7 +49,7 @@ function addNewBill(bill)  {
 	var bill = ""; // html bill skeleton
 	$("#bill-container").append(bill)
 }
-*/
+
 
 function addBills(json, billAmount)  {
 	// billAmount is an int = number of bills to extract, json is all possible bills
@@ -70,9 +64,91 @@ function addBills(json, billAmount)  {
 		billCount++;
 	}
 
-}
+};
 
 $("#bill-container").append($(".bill").clone(true, true));
+*/
+
+// Produce Bills
+
+for (i = 0; i < 5; i++)  {
+	var bill = $("<div />").addClass("row bill");
+	var legislatorImage = $("<div />").addClass("col-md-2 col-centered legImage");
+	var legislatorHeadshot = $("<img />").addClass("img-circle");
+	var legislatorNameContainer = $("<p />").addClass("nameContainer");
+	var legislatorName = $("<a />").addClass("PoliticanNames");
+	var translationsColumn = $("<div />").addClass("col-md-8");
+	var maintranslation = $("<h1 />").addClass("maintranslation");
+	var translationsPane = $("<div />").addClass("translations pane");
+
+	var interactionColumn = $("<div />").addClass("col-md-2");
+	var like = $("<button />").addClass("btn vote-up btn-lg test");
+	var likeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-up");
+	var likeSpanSpan = $("<span />").addClass("badge");
+	var dislike = $("<button />").addClass("btn vote-down btn-lg");
+	var dislikeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-down");
+	var dislikeSpanSpan = $("<span />").addClass("badge");
+	var follow = $("<button />").addClass("btn add-to-mybills btn-lg");
+	var followSpan = $("<span />").addClass("label label-default");
+	var voteCount = $("<p />").addClass("votes");
+
+	bill.appendTo("#bill-container")
+		.append([legislatorImage, translationsColumn, interactionColumn]);
+	legislatorImage.append([legislatorHeadshot, legislatorNameContainer]);
+	legislatorName.appendTo(legislatorNameContainer);
+	translationsColumn.append([maintranslation, translationsPane]);
+
+	like.attr("type", "button");
+	dislike.attr("type", "button");
+	follow.attr("type", "button");
+	voteCount.text("600 votes");
+	interactionColumn.append([like, dislike, follow, voteCount]);
+	
+	likeSpan.attr("aria-hidden", "true")
+		.appendTo(like);
+	likeSpanSpan.text("5")
+		.appendTo(likeSpan);
+
+	dislikeSpan.attr("aria-hidden", "true")
+		.appendTo(dislike);
+	dislikeSpanSpan.text("5")
+		.appendTo(dislikeSpan);
+
+	followSpan.text("follow")
+		.appendTo(follow);
+
+// console.log("got to the end of bill loop!");
+}
+// Produce Translations
+for (i = 0; i < 5; i++)  {
+
+	var translation = $("<div />").addClass("row");
+	var translatorImage = $("<div />").addClass("col-md-3");
+	var translatorHeadshot = $("<img />").addClass("img-circle");
+	var translatorNameContainer = $("<p />").addClass("center-block");
+	var translatorName = $("<a />");
+	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border left");
+	var translationText = $("<p />");
+	translation.appendTo(".translations")
+		.append([translatorImage,translationTextBubble]);
+	translatorHeadshot.attr({
+		'src': "https://pbs.twimg.com/profile_images/456240049776902144/9FNdHosY_400x400.jpeg",
+		'alt': "moms demand action",
+		'href': '#'});
+	translatorImage.append([translatorHeadshot, translatorNameContainer]);
+	translatorName.attr('href','#')
+		.text("Moms demand action")
+		.appendTo(translatorNameContainer);
+	translationText.text("I am a translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer")
+		.appendTo(translationTextBubble);
+
+	if (i % 2 === 0)  {
+		translatorImage.addClass("pull-right");
+		translatorHeadshot.addClass("pull-right");
+		translationTextBubble.removeClass("left")
+			.addClass("right pull-right");
+	}
+}
 
 $(".legImage").children("img").attr({
 	"src": "http://www.sesamestreet.org/cms_services/services?action=download&uid=dbf13ec8-16cd-11dd-a1a2-3f408a4274b3",
@@ -81,21 +157,8 @@ $(".legImage").children("img").attr({
 $(".legImage").find("a").text("Senator Elmo").attr("href", "#");
 
 $(".maintranslation").addClass("state").text("America Feeding Puppies");
-$(."translations").append('<div class="row">');
 
-var translatorImage = $("<div />", {
-	"class":"col-md-3 translatorImage"
-})
-/*
-var translatorHeadshot = $("<img />");
-img.attr({
-	'src': "https://pbs.twimg.com/profile_images/456240049776902144/9FNdHosY_400x400.jpeg",
-	'alt': "moms demand action"});
-img.addClass("img-circle");
-img.appendTo("#translatorImage");
-
-var translatorName = $("<p />");
-p.addClass("center-block");
-p.
-\
-*/
+$(".maintranslation").click(function(){
+            $(this).next().slideToggle();	
+    });
+// compare "nameContainer" and "center-block" css to see if can be combined

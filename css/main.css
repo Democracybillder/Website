@@ -44,11 +44,6 @@ body {
     background-color: #0D47A1;
 }
 
-.PoliticanNames {
-    color: ghostwhite;
-    font-size: 1em;
-    white-space: nowrap;
-}
 
 .nameContainer  {
   text-align: center;
@@ -97,6 +92,12 @@ img {
   margin-bottom: 15px;
   border-radius: 12px;
 }
+
+.row .col-md-3 p a  {    /*translatorName*/
+    color: ghostwhite;
+    font-size: 1em;
+    white-space: nowrap;
+  }      
 
 /* So bill translations only appear when clicked on */
 .translations {
@@ -228,4 +229,5 @@ a p {
     width: 50%;
 }
 
+.row .col-md-9      /*translationTextBubble*/
 
