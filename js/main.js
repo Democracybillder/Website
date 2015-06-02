@@ -50,21 +50,23 @@ function createTranslationsColumn()  {
 }
 
 function createInteractionColumn()  {
-	var like = $("<button />").addClass("btn vote-up btn-lg test");
+	var like = $("<button />").addClass("btn vote-up btn-lg");
 	var likeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-up");
+	var likeSpanSpan = $("<span />").addClass("badge");
 	var dislike = $("<button />").addClass("btn vote-down btn-lg");
-	var dislikeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-down");	
+	var dislikeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-down");
+	var dislikeSpanSpan = $("<span />").addClass("badge");	
 	var follow = $("<button />").addClass("btn add-to-mybills btn-lg");
 	var followSpan = $("<span />").addClass("label label-default");
-	var spanSpan = $("<span />").addClass("badge");
 	var voteCount = $("<p />").addClass("votes");
 	
 	(like, dislike, follow).attr("type", "button");
-	(likeSpan, dislikeSpan).attr("aria-hidden", "true");
+	likeSpan.attr("aria-hidden", "true");
+	dislikeSpan.attr("aria-hidden", "true");
 	likeSpan.appendTo(like);
-	spanSpan.appendTo(likeSpan);
 	dislikeSpan.appendTo(dislike);
-	spanSpan.appendTo(dislikeSpan);
+	likeSpanSpan.appendTo(likeSpan);
+	dislikeSpanSpan.appendTo(dislikeSpan);
 	followSpan.appendTo(follow)
 		.text("Add");
 
@@ -83,6 +85,7 @@ function loadBillShells(billNumber)  {
 	}
 }
 
+loadBillShells(10)
 
 // Produce Translation Shells
 
@@ -144,6 +147,7 @@ function createBillTranslations(translationsNumber)  {
 	}
 }
 
+createBillTranslations(10)
 
 /*
 
@@ -184,8 +188,6 @@ function addBills(json, billAmount)  {
 
 $("#bill-container").append($(".bill").clone(true, true));
 */
-createBillTranslations(10)
-loadBillShells(10)
 
 
 $(".form-control").change(function() {
