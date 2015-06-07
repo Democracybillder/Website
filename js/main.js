@@ -24,24 +24,18 @@ var bill123 = [
             "last_action": "Introduced, referred to Senate Finance"
         },
     "translations":  {
-    	"1":["I am a translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p160x160/11011476_787112128073376_4796995220409643929_n.png?oh=503fd6fd7f6243924494fe383488390c&oe=5604B89B&__gda__=1443154160_8a92dbce042646feedd4be0291aa8521",
-		'alt': "moms demand action"},"America Feeding Puppies",5003],
-    	"American Hunters and Shooters Association":["I am a 2nd translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://upload.wikimedia.org/wikipedia/en/b/be/AHSA_logo.PNG",
-		'alt': "AHSA"},"America Feeding Puppies",123],
-    	"National Rifle Association":["I am a third translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://upload.wikimedia.org/wikipedia/en/thumb/7/73/National_Rifle_Association.svg/1024px-National_Rifle_Association.svg.png",
-		'alt': "NRA"},"America Feeding Puppies",75],
-    	"Americans for Responsible Solutions":["I am a fourth translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://action.americansforresponsiblesolutions.org/page/-/images/logo-bars.jpg",
-		'alt': "ARF"},"America Feeding Puppies",15],
-    	"Faiths United to Prevent Gun Violence":["I am a fifth translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "https://franciscanaction.org/sites/default/files/styles/square_thumbnail/public/Faiths%20United%20to%20Prevent%20Gun%20Violence.jpg?itok=oeR5Z3Dy",
-		'alt': "FUPGV"},"America Feeding Puppies",2],
-    	"Vioelence Policy Center":["I am a sixth translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://www.dancinggiant.com/images/logos/vpc.jpg",
-		'alt': "VPC"},"America Feeding Puppies",1]
+    	"EdSource":["Would eliminate willful defiance or disruption of school activities as a reason to expel students and would limit its use in suspensions.",
+    	{'src': "http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/No_Logo_logo.svg/1280px-No_Logo_logo.svg.png",
+		'alt': "EdSource"},"Student discipline",5003],
+    	"LA School Report":["The bill eliminates “willful defiance” suspensions and expulsions for the next 3 1/2 years for children in grades K-3 for disruptive behavior and eliminates expulsions for all students.",
+    	{'src': "http://laschoolreport.com/wp-content/uploads/2013/07/lasr-logo3.png",
+		'alt': "LA School Report"},"Limiting Willful Defiance Suspensions",123],
+    	"Anti Defamation League":["The new law prohibits for all students expulsion for willful defiance—which can be as minor as a dress code violation or failure to hand in homework—and prohibits for students in grades K–3 suspensions for willful defiance.",
+    	{'src': "http://template.adl.org/files/2012/10/ADL-Web_MG-light-300-150x150.png",
+		'alt': "ADL"},"Reduce Harsh Student Discipline Practices",75],
+		"Fight Crime: Invest in Kids":["An appropriate, logical approach to address undesirable student behavior that promotes alternatives to suspension and keeps kids in the classroom and off the streets.",
+    	{'src': "http://www.fightcrime.org/wp-content/uploads/2011/11/logo1.gif",
+		'alt': "Fight Crime: Invest in Kids"},"Common sense school discipline policies",75]
     }
 },
 {
@@ -69,24 +63,21 @@ var bill123 = [
             "last_action": "Introduced, referred to Senate Finance"
         },
     "translations":  {
-    	"Moms Demand Action":["I am a translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p160x160/11011476_787112128073376_4796995220409643929_n.png?oh=503fd6fd7f6243924494fe383488390c&oe=5604B89B&__gda__=1443154160_8a92dbce042646feedd4be0291aa8521",
-		'alt': "moms demand action"},"America Feeding Puppies",5003],
-    	"American Hunters and Shooters Association":["I am a 2nd translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://upload.wikimedia.org/wikipedia/en/b/be/AHSA_logo.PNG",
-		'alt': "AHSA"},"America Feeding Puppies",123],
-    	"National Rifle Association":["I am a third translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://upload.wikimedia.org/wikipedia/en/thumb/7/73/National_Rifle_Association.svg/1024px-National_Rifle_Association.svg.png",
-		'alt': "NRA"},"America Feeding Puppies",75],
-    	"Americans for Responsible Solutions":["I am a fourth translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://action.americansforresponsiblesolutions.org/page/-/images/logo-bars.jpg",
-		'alt': "ARF"},"America Feeding Puppies",15],
-    	"Faiths United to Prevent Gun Violence":["I am a fifth translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "https://franciscanaction.org/sites/default/files/styles/square_thumbnail/public/Faiths%20United%20to%20Prevent%20Gun%20Violence.jpg?itok=oeR5Z3Dy",
-		'alt': "FUPGV"},"America Feeding Puppies",2],
-    	"Vioelence Policy Center":["I am a sixth translation here me roar longer longer longer longer longer longer longer longer longer longer longer longer longer longerlonger longer longer longer longer longer longerlonger longer longer longer longer longer longer",
-    	{'src': "http://www.dancinggiant.com/images/logos/vpc.jpg",
-		'alt': "VPC"},"America Feeding Puppies",1]
+    	"Fight for the Future":["a secretive agreement negotiated behind closed doors by government bureaucrats and more than 600 corporate lobbyists. It threatens everything you care about: democracy, jobs, the environment, and the Internet.",
+    	{'src': "https://www.stopfasttrack.com/images/orgs/fftf.png",
+		'alt': "FFTF"},"Don't betray democracy!",5003],
+    	"Sierra Club":["It could strip our government's power to manage U.S. gas and oil exports, opening the floodgates for fracking, sacrificing our air and water quality in order to feed foreign markets.",
+    	{'src': "http://action.sierraclub.org/site-inc/350/Sierra_club_logo2_3.JPG",
+		'alt': "Sierra Club"},"Environmental Devistation",123],
+    	"Public Citizen":["President Obama is asking Congress to delegate to him extreme Fast Track authority to railroad into place job-killing trade agreements like the Trans-Pacific Partnership (TPP).",
+    	{'src': "https://www.citizen.org/view.image?Id=1140",
+		'alt': "Public Citizen"},"An Undemocratic Path to Unfair 'Trade'",75],
+    	"Global Exchange":["Allows for the expansion of privileges and protections for big business at the expense of workers, family farms, the environment and democracy at home and around the world.",
+    	{'src': "http://energy-reality.org/wp-content/uploads/2013/06/global-exchange-logo-e1348032449308.png",
+		'alt': "GE"},"Corporate Interests and Privitization",15],
+    	"Corporate Accountability International":["The TPP reaches far beyond the confines of trade and threatens countries’ sovereign right to pass and defend public health and environmental policies by granting corporations legal authority to challenge them directly on trade grounds through the investor-state dispute mechanism.",
+    	{'src': "https://www.stopcorporateabuse.org/sites/default/files/logo_0.png",
+		'alt': "CAI"},"Railroads the TPP through Congress",2]
     }
 }
 ];
