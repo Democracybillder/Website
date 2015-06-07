@@ -44,9 +44,13 @@ body {
     background-color: #0D47A1;
 }
 
-
 .nameContainer  {
   text-align: center;
+  font-size: 1.5em;
+}
+
+.PoliticianNames  {
+  color: rgba(234,244,249,0.7);
 }
 
 .legImage {
@@ -93,11 +97,12 @@ img {
   border-radius: 12px;
 }
 
-.row .col-md-3 p a  {    /*translatorName*/
-    color: ghostwhite;
-    font-size: 1em;
-    white-space: nowrap;
-  }      
+.row .col-md-3 div a  {    /*translatorName*/
+  color: ghostwhite;
+  font-size: 1em;
+  text-align: center;
+  padding-top: 5px;
+  }
 
 /* So bill translations only appear when clicked on */
 .translations {
@@ -174,10 +179,6 @@ img {
   right: -21px;
   border-width: 9px 0 9px 21px;
   border-color: transparent #0D47A1;
-}
-
-.col-md-3.pull-right  {
-  padding-right: 30px;
 }
 
 
