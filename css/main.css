@@ -76,6 +76,8 @@ img {
     background-color: #0D47A1;
     color: ghostwhite;
     margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .votes  {
@@ -99,10 +101,17 @@ img {
 
 .row .col-md-3 div a  {    /*translatorName*/
   color: ghostwhite;
-  font-size: 1em;
+  font-size: 75%;
   text-align: center;
   padding-top: 5px;
+  line-height: 0%;
   }
+
+h4  {                    /*Translation Title*/
+  color: ghostwhite;
+  font-style: 
+
+}
 
 /* So bill translations only appear when clicked on */
 .translations {
