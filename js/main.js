@@ -7,7 +7,7 @@ var bill123 = [
         "title": "Levy And Assessment Of Local Taxes",
         "state": "RI",
         "description": "Permits a municipality, where there is a budget commission, to charge a tax of up to fifteen percent (15%) of the qualified low-income housing's current year's gross scheduled rent.",
-        "votes": {"yay": 5, "nay": 5},
+        "votes": {"yay": 88, "nay": 5},
         "following": 600
     },
     "sponsor":  [
@@ -46,14 +46,14 @@ var bill123 = [
         "title": "Levy And Assessment Of Local Taxes",
         "state": "RI",
         "description": "Permits a municipality, where there is a budget commission, to charge a tax of up to fifteen percent (15%) of the qualified low-income housing's current year's gross scheduled rent.",
-        "votes": {"yay": 5, "nay": 5},
-        "following": 600
+        "votes": {"yay": 26, "nay": 1543},
+        "following": 125
     },
     "sponsor":  [
-    	"Senator Elmo",
+    	"Senator Big Bird",
     	{
-    		"src":"http://www.sesamestreet.org/cms_services/services?action=download&uid=dbf13ec8-16cd-11dd-a1a2-3f408a4274b3",
-    		"alt": "elmo"
+    		"src":"http://static.musictoday.com/store/bands/2117/product_large/6EAM0965.JPG",
+    		"alt": "big-bird"
     	}
     ],
     "log": {
@@ -107,10 +107,10 @@ function createTranslationsColumn()  {
 function createInteractionColumn()  {
 	var like = $("<button />").addClass("btn vote-up btn-lg"),
 	likeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-up"),
-	likeSpanSpan = $("<span />").addClass("badge"),
+	likeSpanSpan = $("<span />").addClass("badge like"),
 	dislike = $("<button />").addClass("btn vote-down btn-lg"),
 	dislikeSpan = $("<span />").addClass("glyphicon glyphicon-thumbs-down"),
-	dislikeSpanSpan = $("<span />").addClass("badge"),
+	dislikeSpanSpan = $("<span />").addClass("badge dislike"),
 	follow = $("<button />").addClass("btn add-to-mybills btn-lg"),
 	followSpan = $("<span />").addClass("label label-default"),
 	voteCount = $("<p />").addClass("votes");
@@ -133,51 +133,67 @@ function createInteractionColumn()  {
 
 function createLeftTranslation()  {
 // Creates left oriented translation shell
-	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border left"),
+	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border left")
+	.append(createTranslationTitle()),
 	translatorImage = createTranslatorImage(),
 	translationText = $("<p />").appendTo(translationTextBubble),
+	translationEndorsement = createTranslationEndorseButton().appendTo(translationTextBubble),
 	translation = $("<div />").addClass("row")
 		.append([translatorImage,translationTextBubble]);
-		return translation
+		return translation;
 }
 
 function createRightTranslation()  {
 // Creates right oriented translation shell
-	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border right pull-right"),
+	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border right pull-right")
+	.append(createTranslationTitle()),
 	translatorImage = createTranslatorImage(1).addClass("pull-right"),
 	translationText = $("<p />").appendTo(translationTextBubble),
+	translationEndorsement = createTranslationEndorseButton().appendTo(translationTextBubble),
 	translation = $("<div />").addClass("row")
 		.append([translatorImage,translationTextBubble]);
-	$(translatorImage).find("a").addClass("pull-right");
-		return translation
+	return translation;
+}
+
+function createTranslationTitle()  {
+	return $("<h4 />").addClass("title");
 }
 
 function createTranslatorImage(right)  {
 // Creates shell for translator image and name
 	right = right || 0;
-	var translatorHeadshot = $("<img />").addClass("img-circle"),
+	var translatorContainer = $("<div />"),
+	translatorHeadshotContainer = HeadshotContainer(),
 	translatorNameContainer = createTranslationNameContainer();
 	if (right === 1)  {
-		translatorHeadshot.addClass("pull-right")};
+		translatorContainer.addClass("pull-right")};
 	return $("<div />").addClass("col-md-3")
-	.append([translatorHeadshot, translatorNameContainer]);
+	.append((translatorContainer)
+	.append([translatorHeadshotContainer, translatorNameContainer]));
+}
+
+function HeadshotContainer()  {
+	var translatorHeadshot = $("<img />").addClass("img-circle center-block"),
+	translatorheadshotContainer = $("<div />").addClass("center-block");
+	return translatorheadshotContainer.append(translatorHeadshot);
 }
 
 function createTranslationNameContainer()  {
-	var translatorName = $("<a />");
+	var translatorName = $("<a />"),
+	centerBlock = $("<div />").addClass("center-block");
 	translatorName.attr('href','#');
-	return $("<div />").addClass("center-block")
-		.append(translatorName);
+	return $("<p />").addClass("nameContainer")
+		.append(centerBlock
+		.append(translatorName));
 }
 
 function createTranslationEndorseButton()  {
-	var endorse = $("<button />").addClass("btn endorse btn-lg"),
-	endorseSpan = $("<span />").addClass("label label-default"),
-	endorsementCount = $("<p />").addClass("endorsements");
+	var endorse = $("<button />").addClass("btn endorse btn-lg center-block"),
+	endorseSpan = $("<span />").addClass("label label-default endorsement");
 	endorse.attr("type", "button");
 	endorseSpan.appendTo(endorse)
-		.text("Endorse Translation");
-	return $("<div />").append([endorse, endorsementCount])
+		.text(" Endorse Translation");
+	return $("<div />").append(endorse);
 }
 
 function createBillTranslation(translationCounter)  {
@@ -196,9 +212,9 @@ function insertDescription(interactionColumn, descriptionObject)  {
 	yayVotes = descriptionObject["votes"]["yay"],
 	nayVotes = descriptionObject["votes"]["nay"];
 	$(interactionColumn).find(".votes").text(following); 
-	$(interactionColumn).find(".badge").text(yayVotes);
+	$(interactionColumn).find(".like").text(yayVotes);
+	$(interactionColumn).find(".dislike").text(nayVotes);
 	return interactionColumn; 
-	// fix this! $(".badge").text(yayVotes); 
 }
 
 function insertSponsor(sponsorColumn, sponsorObject)  {
@@ -215,7 +231,9 @@ function insertSponsor(sponsorColumn, sponsorObject)  {
 
 function insertTranslations(translationColumn, translationObject)  {
 // Takes translation object and inputs each translation to the given bill
-	var translationCounter = 1; 
+	var translationCounter = 1,
+	highEndorsement = 0,
+	billTitle = null;
 	for (var key in translationObject)  {
 		if (translationObject.hasOwnProperty(key)) {
 			var newTranslation = createBillTranslation(translationCounter);
@@ -227,9 +245,17 @@ function insertTranslations(translationColumn, translationObject)  {
 					.attr({
 					'src': object[1]["src"],
 					'alt': object[1]["alt"]});
+			$(newTranslation).find(".title").text(object[2]);
+			var endorsement = $(newTranslation).find(".endorsement");
+			if (object[3] > highEndorsement)  {
+				highEndorsement = object[3];
+				billTitle = object[2];
+			}
+			endorsement.text((object[3].toString()).concat(endorsement.text()));
 			$(translationColumn).children(".translations").append(newTranslation);
 		}
 	}
+	$(translationColumn).children(".maintranslation").text(billTitle);
 	return translationColumn;
 }
 
@@ -268,9 +294,6 @@ function compileTranslationsPane(billTranslations)  {
 insertBills(bill123);
 
 // Need to find another way for .maintranslation (the title)
-
-
-$(".maintranslation").text("bill title");
 
 $(".form-control").change(function() {
 			alert("Input value: " + $(".form-control").val());

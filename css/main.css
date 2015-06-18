@@ -76,6 +76,8 @@ img {
     background-color: #0D47A1;
     color: ghostwhite;
     margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .votes  {
@@ -85,6 +87,8 @@ img {
 .bill  {
   border-bottom: thin solid rgba(216, 211, 211, .5);
 }
+
+
 
 
 
@@ -99,10 +103,17 @@ img {
 
 .row .col-md-3 div a  {    /*translatorName*/
   color: ghostwhite;
-  font-size: 1em;
+  font-size: 75%;
   text-align: center;
   padding-top: 5px;
+  line-height: 0%;
   }
+
+h4  {                    /*Translation Title*/
+  color: ghostwhite;
+  margin-top: 5px;
+
+}
 
 /* So bill translations only appear when clicked on */
 .translations {
@@ -230,5 +241,19 @@ a p {
     width: 50%;
 }
 
-.row .col-md-9      /*translationTextBubble*/
+.row .col-md-9  {   /*translationTextBubble*/
+  margin-bottom: 12px;
+  }      
+
+.row .col-md-9 p  {
+  margin-bottom: 0px;
+}
+
+.col-md-9 div .btn  {
+margin-top: 5px;
+}
+
+.col-md-2  {
+  padding-right: 5px;
+}
 
