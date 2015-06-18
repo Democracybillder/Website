@@ -231,7 +231,9 @@ function insertSponsor(sponsorColumn, sponsorObject)  {
 
 function insertTranslations(translationColumn, translationObject)  {
 // Takes translation object and inputs each translation to the given bill
-	var translationCounter = 1; 
+	var translationCounter = 1,
+	highEndorsement = 0,
+	billTitle = null;
 	for (var key in translationObject)  {
 		if (translationObject.hasOwnProperty(key)) {
 			var newTranslation = createBillTranslation(translationCounter);
@@ -245,10 +247,15 @@ function insertTranslations(translationColumn, translationObject)  {
 					'alt': object[1]["alt"]});
 			$(newTranslation).find(".title").text(object[2]);
 			var endorsement = $(newTranslation).find(".endorsement");
+			if (object[3] > highEndorsement)  {
+				highEndorsement = object[3];
+				billTitle = object[2];
+			}
 			endorsement.text((object[3].toString()).concat(endorsement.text()));
 			$(translationColumn).children(".translations").append(newTranslation);
 		}
 	}
+	$(translationColumn).children(".maintranslation").text(billTitle);
 	return translationColumn;
 }
 
@@ -287,9 +294,6 @@ function compileTranslationsPane(billTranslations)  {
 insertBills(bill123);
 
 // Need to find another way for .maintranslation (the title)
-
-
-$(".maintranslation").text("bill title");
 
 $(".form-control").change(function() {
 			alert("Input value: " + $(".form-control").val());
