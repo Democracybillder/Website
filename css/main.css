@@ -90,6 +90,8 @@ img {
 
 
 
+
+
 /* Translations */
 
 .pane  {
@@ -109,7 +111,7 @@ img {
 
 h4  {                    /*Translation Title*/
   color: ghostwhite;
-  font-style: 
+  margin-top: 5px;
 
 }
 
@@ -239,5 +241,15 @@ a p {
     width: 50%;
 }
 
-.row .col-md-9      /*translationTextBubble*/
+.row .col-md-9  {   /*translationTextBubble*/
+  margin-bottom: 12px;
+  }      
+
+.row .col-md-9 p  {
+  margin-bottom: 0px;
+}
+
+.col-md-9 div .btn  {
+margin-top: 5px;
+}
 

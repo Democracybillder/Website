@@ -133,22 +133,30 @@ function createInteractionColumn()  {
 
 function createLeftTranslation()  {
 // Creates left oriented translation shell
-	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border left"),
+	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border left")
+	.append(createTranslationTitle()),
 	translatorImage = createTranslatorImage(),
 	translationText = $("<p />").appendTo(translationTextBubble),
+	translationEndorsement = createTranslationEndorseButton().appendTo(translationTextBubble),
 	translation = $("<div />").addClass("row")
 		.append([translatorImage,translationTextBubble]);
-		return translation
+		return translation;
 }
 
 function createRightTranslation()  {
 // Creates right oriented translation shell
-	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border right pull-right"),
+	var translationTextBubble = $("<div />").addClass("col-md-9 triangle-border right pull-right")
+	.append(createTranslationTitle()),
 	translatorImage = createTranslatorImage(1).addClass("pull-right"),
 	translationText = $("<p />").appendTo(translationTextBubble),
+	translationEndorsement = createTranslationEndorseButton().appendTo(translationTextBubble),
 	translation = $("<div />").addClass("row")
 		.append([translatorImage,translationTextBubble]);
-	return translation
+	return translation;
+}
+
+function createTranslationTitle()  {
+	return $("<h4 />").addClass("title");
 }
 
 function createTranslatorImage(right)  {
@@ -180,13 +188,12 @@ function createTranslationNameContainer()  {
 }
 
 function createTranslationEndorseButton()  {
-	var endorse = $("<button />").addClass("btn endorse btn-lg"),
-	endorseSpan = $("<span />").addClass("label label-default"),
-	endorsementCount = $("<p />").addClass("endorsements");
+	var endorse = $("<button />").addClass("btn endorse btn-lg center-block"),
+	endorseSpan = $("<span />").addClass("label label-default endorsement");
 	endorse.attr("type", "button");
 	endorseSpan.appendTo(endorse)
-		.text("Endorse Translation");
-	return $("<div />").append([endorse, endorsementCount])
+		.text(" Endorse Translation");
+	return $("<div />").append(endorse);
 }
 
 function createBillTranslation(translationCounter)  {
@@ -236,6 +243,9 @@ function insertTranslations(translationColumn, translationObject)  {
 					.attr({
 					'src': object[1]["src"],
 					'alt': object[1]["alt"]});
+			$(newTranslation).find(".title").text(object[2]);
+			var endorsement = $(newTranslation).find(".endorsement");
+			endorsement.text((object[3].toString()).concat(endorsement.text()));
 			$(translationColumn).children(".translations").append(newTranslation);
 		}
 	}
